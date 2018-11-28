@@ -1,0 +1,83 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Glegoo" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/interactjs@1.3/dist/interact.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body>
+
+	<!-- START OF HOME VIEW -->
+	<section class="section" id="landing">
+		<div id="room-light"></div>
+		<div class="light-container">
+			<div><img id="bulb" src="assets/img/lightbulb_off.png"></div>
+		</div>
+		<div id="spotlight"><img src="assets/img/spotlight1.svg" width=50% height=auto></div>
+		<div id="welcome">
+			<p id="greeting">welcome<br> to my photo<br> portfolio</p>
+		</div>
+
+		<a class="button" id="quick-photos" href="#photo-gallery">collections</a>
+		<a class="button" id="link-to-about" href="about.html">about</a>
+
+		<div id="scroll-button" href="#color-picker"><img id="down-arrow" src="assets/img/down-arrow.svg" width=3% height=auto></div>
+	</section>
+	<!-- END OF HOME VIEW -->
+
+	<!-- START OF COLOR PICKER VIEW -->
+	<section class="section" id="color-picker">
+		
+		<div id="dropzone">
+			<div id="instructions">pull a color card off</div>
+			<div id="clotheshanger"><img src="assets/img/clotheshanger.svg" width=100% height=auto></div>
+			<div id="drag-1" class="draggable" href="#photo-gallery"><img src="assets/img/cyan-pantone.svg" width=100% height=100%></div>
+			<div id="drag-2" class="draggable" href="#photo-gallery"><img src="assets/img/magenta-pantone.svg" width=100% height=100%></div>
+			<div id="drag-3" class="draggable" href="#photo-gallery"><img src="assets/img/yellow-pantone.svg" width=100% height=100%></div>
+		</div>
+
+	</section>
+	<!-- END OF COLOR PICKER VIEW -->
+
+	<!-- START OF GALLERY -->
+	<section class="section" id="photo-gallery">
+		<div id="studio-background">
+			<div id="filmstrip">
+				<div class="photo" id="one"></div>
+				<div class="photo" id="two"></div>
+				<div class="photo" id="three"></div>
+			</div>
+
+			<div id="color-label">
+				<div id="color-name" class="color-stuff"></div>
+				<div id="color-description" class="color-stuff"></div>
+			</div>
+		<!-- 	<div id="label">
+				<div id="color-name"><p>{ cy·​an }</p></div>
+				<div id="color-description">
+					<p>a restful, calming color that<br> symbolizes relaxation</p>
+				</div>
+			</div> -->
+
+			<div id="switch-colors">
+				<div class="dot" id="cyan-dot"></div>
+				<div class="dot" id="magenta-dot"></div>
+				<div class="dot" id="yellow-dot"></div>
+				<div class="dot" id="white-dot" href="#landing"></div>
+			</div>
+
+		</div>
+		
+	</section>
+	<!-- END OF GALLERY -->
+
+	<!-- TEST SECTION -->
+
+
+</body>
+</html>
