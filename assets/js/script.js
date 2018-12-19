@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$("#color-name").text('{ cy·​an }');
-	$("#color-description").text('the deepest of oceans, the calmest of thoughts');
+	$("#color-name").text('{ gre·​en }');
+	$("#color-description").text('a rejuvenation of the senses');
 	$("body, html").animate({
 		scrollTop: 0
 	});
@@ -9,6 +9,8 @@ $(document).ready(function() {
 	if (sessionStorage.getItem("isThisFirstTime") != "no") {
 		$("#bulb").click(function() {
 			$("#bulb").css("animation", "none");
+			$("#bulb").css("cursor", "default");
+			$("#open-sesame").fadeOut(200);
 			$("#room-light").css('background-color', 'white');
 			$("#room-light").css('transition', 'background-color 0.15s');
 			$("#bulb").attr("src","assets/img/lightbulb_on.png");
@@ -23,6 +25,8 @@ $(document).ready(function() {
 
 	else {
 		$("#bulb").css("animation", "none");
+		$("#bulb").css("cursor", "default");
+		$("#open-sesame").fadeOut(200);
 		$("#room-light").css('background-color', 'white');
 		$("#bulb").attr("src","assets/img/lightbulb_on.png");
 		$("#spotlight").show();
@@ -53,44 +57,44 @@ $(document).ready(function() {
 	}
 
 	$("#cyan-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(0, 161, 199, 0.14)");
+		$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/cyan1.JPEG")');
-		$("#two").css('background-image', 'url("assets/img/cyan2.JPG")');
-		$("#three").css('background-image', 'url("assets/img/cyan3.JPG")');
+		$("#one").css('background-image', 'url("assets/img/green1.jpg")');
+		$("#two").css('background-image', 'url("assets/img/green2.jpg")');
+		$("#three").css('background-image', 'url("assets/img/green3.jpg")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ cy·​an }';
-		document.getElementById('color-description').innerHTML = 'the deepest of oceans, the calmest of thoughts';
+		document.getElementById('color-name').innerHTML = '{ gre·​en }';
+		document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
 
 	});
 
 	$("#magenta-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(240, 198, 206, 0.28)");
+		$("#studio-background").css("background-color", "rgba(255, 126, 126, 0.2)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/magenta1.JPG")');
-		$("#two").css('background-image', 'url("assets/img/magenta2.JPG")');
-		$("#three").css('background-image', 'url("assets/img/magenta3.JPG")');
+		$("#one").css('background-image', 'url("assets/img/red1.jpg")');
+		$("#two").css('background-image', 'url("assets/img/red2.JPG")');
+		$("#three").css('background-image', 'url("assets/img/red3.JPG")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ ma·​gen·​ta }';
-		document.getElementById('color-description').innerHTML = 'where compassion, harmony, and reverie collide';
+		document.getElementById('color-name').innerHTML = '{ red }';
+		document.getElementById('color-description').innerHTML = 'la vie en rouge';
 
 	});
 
 	$("#yellow-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(255, 231, 0, 0.11)");
+		$("#studio-background").css("background-color", "rgba(234, 234, 234, 0.06)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/yellow1.jpg")');
-		$("#two").css('background-image', 'url("assets/img/yellow2.jpg")');
-		$("#three").css('background-image', 'url("assets/img/yellow3.jpg")');
+		$("#one").css('background-image', 'url("assets/img/white1.JPG")');
+		$("#two").css('background-image', 'url("assets/img/white2.jpg")');
+		$("#three").css('background-image', 'url("assets/img/white3.JPG")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ yel·​low }';
-		document.getElementById('color-description').innerHTML = 'stay fresh, be happy';
+		document.getElementById('color-name').innerHTML = '{ whi·​te }';
+		document.getElementById('color-description').innerHTML = 'a blank canvas';
 
 	});
 
@@ -127,9 +131,9 @@ $(document).ready(function() {
 	$(".button").click(function () {
 		$(".photo").show();
 		$(".color-stuff").show();
-		$("#studio-background").css("background-color", "rgba(0, 161, 199, 0.14)");
-		document.getElementById('color-name').innerHTML = '{ cy·​an }';
-		document.getElementById('color-description').innerHTML = 'the deepest of oceans, the calmest of thoughts';
+		$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
+		document.getElementById('color-name').innerHTML = '{ gre·​en }';
+		document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
 	});
 
 	var carddiv = "";
@@ -190,39 +194,41 @@ $(document).ready(function() {
 
 		$("html, body").animate({ scrollTop: $('#photo-gallery').offset().top });
 		if (cardnumber == 1) {
-			$("#studio-background").css("background-color", "rgba(0, 161, 199, 0.14)");
+			$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
 			$(".photo").fadeIn(200);
-			$(".color-stuff").fadeIn(200);
-			$("#one").css('background-image', 'url("assets/img/cyan1.JPEG")');
-			$("#two").css('background-image', 'url("assets/img/cyan2.JPG")');
-			$("#three").css('background-image', 'url("assets/img/cyan3.JPG")');
+			$(".color-stuff").fadeIn(220);
+			$("#one").css('background-image', 'url("assets/img/green1.jpg")');
+			$("#two").css('background-image', 'url("assets/img/green2.jpg")');
+			$("#three").css('background-image', 'url("assets/img/green3.jpg")');
 
-			document.getElementById('color-name').innerHTML = '{ cy·​an }';
-			document.getElementById('color-description').innerHTML = 'the deepest of oceans, the calmest of thoughts';
+			
+			document.getElementById('color-name').innerHTML = '{ gre·​en }';
+			document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
+	
 		}
 
 		else if (cardnumber == 2) {
-			$("#studio-background").css("background-color", "rgba(240, 198, 206, 0.28)");
+			$("#studio-background").css("background-color", "rgba(255, 126, 126, 0.2)");
 			$(".photo").fadeIn(200);
-			$(".color-stuff").fadeIn(200);
-			$("#one").css('background-image', 'url("assets/img/magenta1.JPG")');
-			$("#two").css('background-image', 'url("assets/img/magenta2.JPG")');
-			$("#three").css('background-image', 'url("assets/img/magenta3.JPG")');
+			$(".color-stuff").fadeIn(220);
+			$("#one").css('background-image', 'url("assets/img/red1.jpg")');
+			$("#two").css('background-image', 'url("assets/img/red2.JPG")');
+			$("#three").css('background-image', 'url("assets/img/red3.JPG")');
 
-			document.getElementById('color-name').innerHTML = '{ ma·​gen·​ta }';
-			document.getElementById('color-description').innerHTML = 'where compassion, harmony, and reverie collide';
+			document.getElementById('color-name').innerHTML = '{ red }';
+			document.getElementById('color-description').innerHTML = 'la vie en rouge';
 		}
 
 		else {
-			$("#studio-background").css("background-color", "rgba(255, 231, 0, 0.11)");
+			$("#studio-background").css("background-color", "rgba(234, 234, 234, 0.06)");
 			$(".photo").fadeIn(200);
-			$(".color-stuff").fadeIn(200);
-			$("#one").css('background-image', 'url("assets/img/yellow1.jpg")');
-			$("#two").css('background-image', 'url("assets/img/yellow2.jpg")');
-			$("#three").css('background-image', 'url("assets/img/yellow3.jpg")');
+			$(".color-stuff").fadeIn(220);
+			$("#one").css('background-image', 'url("assets/img/white1.JPG")');
+			$("#two").css('background-image', 'url("assets/img/white2.jpg")');
+			$("#three").css('background-image', 'url("assets/img/white3.JPG")');
 
-			document.getElementById('color-name').innerHTML = '{ ma·​gen·​ta }';
-			document.getElementById('color-description').innerHTML = 'where compassion, harmony, and reverie collide';
+			document.getElementById('color-name').innerHTML = '{ whi·​te }';
+			document.getElementById('color-description').innerHTML = 'a blank canvas';
 		}
 
 		// console.log(cardnumber);
