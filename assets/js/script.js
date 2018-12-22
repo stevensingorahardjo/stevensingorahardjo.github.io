@@ -128,13 +128,13 @@ $(document).ready(function() {
 
 	})
 
-	$(".button").click(function () {
-		$(".photo").show();
-		$(".color-stuff").show();
-		$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
-		document.getElementById('color-name').innerHTML = '{ gre·​en }';
-		document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
-	});
+	// $(".button").click(function () {
+	// 	$(".photo").show();
+	// 	$(".color-stuff").show();
+	// 	$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
+	// 	document.getElementById('color-name').innerHTML = '{ gre·​en }';
+	// 	document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
+	// });
 
 	var carddiv = "";
 
