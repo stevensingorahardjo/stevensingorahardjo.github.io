@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	$("#color-name").text('{ gre·​en }');
-	$("#color-description").text('a rejuvenation of the senses');
+	$("#color-name").text('{ e komo mai }');
+	$("#color-description").text('welcome');
 	$("body, html").animate({
 		scrollTop: 0
 	});
@@ -57,44 +57,44 @@ $(document).ready(function() {
 	}
 
 	$("#cyan-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
+		$("#studio-background").css("background-color", "rgba(170, 237, 236, 0.2)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/green1.jpg")');
-		$("#two").css('background-image', 'url("assets/img/green2.jpg")');
-		$("#three").css('background-image', 'url("assets/img/green3.jpg")');
+		$("#one").css('background-image', 'url("assets/img/hawaii1.jpg")');
+		$("#two").css('background-image', 'url("assets/img/hawaii2.jpg")');
+		$("#three").css('background-image', 'url("assets/img/hawaii3.jpg")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ gre·​en }';
-		document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
+		document.getElementById('color-name').innerHTML = '{ e komo mai }';
+		document.getElementById('color-description').innerHTML = 'welcome';
 
 	});
 
 	$("#magenta-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(255, 126, 126, 0.2)");
+		$("#studio-background").css("background-color", "rgba(226, 187, 232, 0.11)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/red1.jpg")');
-		$("#two").css('background-image', 'url("assets/img/red2.JPG")');
-		$("#three").css('background-image', 'url("assets/img/red3.JPG")');
+		$("#one").css('background-image', 'url("assets/img/hawaii4.jpg")');
+		$("#two").css('background-image', 'url("assets/img/hawaii5.jpg")');
+		$("#three").css('background-image', 'url("assets/img/hawaii6.jpg")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ red }';
-		document.getElementById('color-description').innerHTML = 'la vie en rouge';
+		document.getElementById('color-name').innerHTML = '{ aloha kakahiaka }';
+		document.getElementById('color-description').innerHTML = 'good morning';
 
 	});
 
 	$("#yellow-dot").click(function() {
-		$("#studio-background").css("background-color", "rgba(234, 234, 234, 0.06)");
+		$("#studio-background").css("background-color", "rgba(218, 255, 125, 0.06)");
 		$("#studio-background").css('transition', 'background-color 0.25s');
 		$(".photo").fadeIn(200);
-		$("#one").css('background-image', 'url("assets/img/white1.JPG")');
-		$("#two").css('background-image', 'url("assets/img/white2.jpg")');
-		$("#three").css('background-image', 'url("assets/img/white3.JPG")');
+		$("#one").css('background-image', 'url("assets/img/hawaii7.jpg")');
+		$("#two").css('background-image', 'url("assets/img/hawaii8.jpg")');
+		$("#three").css('background-image', 'url("assets/img/hawaii9.jpg")');
 
 		$(".color-stuff").fadeIn(220);
-		document.getElementById('color-name').innerHTML = '{ whi·​te }';
-		document.getElementById('color-description').innerHTML = 'a blank canvas';
+		document.getElementById('color-name').innerHTML = '{ ohana }';
+		document.getElementById('color-description').innerHTML = 'family';
 
 	});
 
@@ -194,41 +194,41 @@ $(document).ready(function() {
 
 		$("html, body").animate({ scrollTop: $('#photo-gallery').offset().top });
 		if (cardnumber == 1) {
-			$("#studio-background").css("background-color", "rgba(138, 183, 143, 0.2)");
+			$("#studio-background").css("background-color", "rgba(170, 237, 236, 0.2)");
 			$(".photo").fadeIn(200);
 			$(".color-stuff").fadeIn(220);
-			$("#one").css('background-image', 'url("assets/img/green1.jpg")');
-			$("#two").css('background-image', 'url("assets/img/green2.jpg")');
-			$("#three").css('background-image', 'url("assets/img/green3.jpg")');
+			$("#one").css('background-image', 'url("assets/img/hawaii1.jpg")');
+			$("#two").css('background-image', 'url("assets/img/hawaii2.jpg")');
+			$("#three").css('background-image', 'url("assets/img/hawaii3.jpg")');
 
 			
-			document.getElementById('color-name').innerHTML = '{ gre·​en }';
-			document.getElementById('color-description').innerHTML = 'a rejuvenation of the senses';
+			document.getElementById('color-name').innerHTML = '{ e komo mai }';
+			document.getElementById('color-description').innerHTML = 'welcome';
 	
 		}
 
 		else if (cardnumber == 2) {
-			$("#studio-background").css("background-color", "rgba(255, 126, 126, 0.2)");
+			$("#studio-background").css("background-color", "rgba(226, 187, 232, 0.11)");
 			$(".photo").fadeIn(200);
 			$(".color-stuff").fadeIn(220);
-			$("#one").css('background-image', 'url("assets/img/red1.jpg")');
-			$("#two").css('background-image', 'url("assets/img/red2.JPG")');
-			$("#three").css('background-image', 'url("assets/img/red3.JPG")');
+			$("#one").css('background-image', 'url("assets/img/hawaii4.jpg")');
+			$("#two").css('background-image', 'url("assets/img/hawaii5.jpg")');
+			$("#three").css('background-image', 'url("assets/img/hawaii6.jpg")');
 
-			document.getElementById('color-name').innerHTML = '{ red }';
-			document.getElementById('color-description').innerHTML = 'la vie en rouge';
+			document.getElementById('color-name').innerHTML = '{ aloha kakahiaka }';
+			document.getElementById('color-description').innerHTML = 'good morning';
 		}
 
 		else {
-			$("#studio-background").css("background-color", "rgba(234, 234, 234, 0.06)");
+			$("#studio-background").css("background-color", "rgba(218, 255, 125, 0.06)");
 			$(".photo").fadeIn(200);
 			$(".color-stuff").fadeIn(220);
-			$("#one").css('background-image', 'url("assets/img/white1.JPG")');
-			$("#two").css('background-image', 'url("assets/img/white2.jpg")');
-			$("#three").css('background-image', 'url("assets/img/white3.JPG")');
+			$("#one").css('background-image', 'url("assets/img/hawaii7.jpg")');
+			$("#two").css('background-image', 'url("assets/img/hawaii8.jpg")');
+			$("#three").css('background-image', 'url("assets/img/hawaii9.jpg")');
 
-			document.getElementById('color-name').innerHTML = '{ whi·​te }';
-			document.getElementById('color-description').innerHTML = 'a blank canvas';
+			document.getElementById('color-name').innerHTML = '{ ohana }';
+			document.getElementById('color-description').innerHTML = 'family';
 		}
 
 		// console.log(cardnumber);
